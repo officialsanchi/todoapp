@@ -1,0 +1,23 @@
+
+.input-container {
+    background-color: black;
+    color: white;
+   
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    color: white;
+}
+.input{
+    width: 300px;
+    height:25px ;
+    gap: 70px;
+
+}
+.submit{
+    margin-left: 190px;
+}
