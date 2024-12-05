@@ -1,22 +1,22 @@
 .main{
     width: 100%;
-    background: black;
-    height: 50px;
+    height: 100px;
+    background-color: white;
+    margin: 0;
+   
+     /* display: flex;  */
+     justify-content: end;
+      align-items: center;
+       
+}
+.front{
+    display: flex; 
+     justify-content: space-between;
+    text-align: left;
+    font-size: 1rem;
+     color: black; 
 
 }
-.tab{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-.nav{
-    margin-left: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.todo{
+    margin-right: 10px;
 }

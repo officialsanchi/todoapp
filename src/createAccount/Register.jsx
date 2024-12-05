@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from "../style/register.module.css"
 import {Link} from "react-router-dom"
+import Navbar from '../component/Bar/Navbar'
 
 
 const Register = () => {
@@ -45,6 +46,7 @@ const Register = () => {
           <div className={style.inputStyle}>
             <label className={style.label}>Name:</label>
             <input
+            placeholder='Enter your name'
               type="text"
               value={name}
               className={style.input}
@@ -55,6 +57,7 @@ const Register = () => {
           <div className={style.inputStyle}>
             <label className={style.label}>UserName:</label>
             <input type="text"
+             placeholder='Enter your userName'
             className={style.input}
             value={userName} 
             onChange={(event) => setUserName (event.target.value)}
@@ -65,6 +68,7 @@ const Register = () => {
           <label className={style.label}>Email:</label>
             <input
               type="email"
+               placeholder='Enter your email'
               className={style.input}
               value={email}
               onChange={(event) => setEmail(event.target.value)}
@@ -75,6 +79,7 @@ const Register = () => {
             <label className={style.label}>Password:</label>
             <input
               type="password"
+               placeholder='Enter your password'
               className={style.input}
               value={password}
               onChange={(event) => setPassword(event.target.value)}
@@ -85,6 +90,7 @@ const Register = () => {
             <label className={style.label}>Confirm Password:</label>
             <input
               type="password"
+               placeholder='Enter your password'
               className={style.input}
               value={confirmPassword}
               onChange={(event) => setConfirmPassword(event.target.value)}
@@ -93,7 +99,8 @@ const Register = () => {
           </div>
           {error && <p className="error">{error}</p>}
           {success && <p className="success">{success}</p>}
-          <button className={style.button} type="submit">Register</button>
+          <Link to='/register'><button className={style.button} type="register">Register</button></Link>
+          
         </form>
       </div>
       </div>

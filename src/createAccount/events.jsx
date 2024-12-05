@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import style from "../style/events.module.css"
 import MenuItem from '@mui/material/MenuItem';
+import {Link} from "react-router-dom";
 
 const Events = ({button}) => {
 
@@ -15,13 +16,16 @@ const Events = ({button}) => {
     setAnchorEl(null);
   };
   return (
-    <div style={{height:"100vh"}}> 
+    <div className={style.motherDiv}> 
         <div className={style.firstDiv}>
-        <div onClick={handleClose} className={style.menu}>Create Task</div>
-        <div onClick={handleClose} className={style.menu}>All Task</div>
-        <div onClick={handleClose} className={style.menu}>Pending Task</div>
-        <div onClick={handleClose} className={style.menu}>Cancelled Task</div>
-        <div onClick={handleClose} className={style.menu}>Completed Task</div>
+        <div onClick={handleClose} className={style.menu}> <Link to="/createTask">Create Task</Link></div>
+        <div onClick={handleClose} className={style.menu}><Link to="/allTask">All Task</Link></div>
+        <div onClick={handleClose} className={style.menu}><Link to="/pendingTask">Pending Task</Link></div>
+        <div onClick={handleClose} className={style.menu}><Link to="/cancelledTask">Cancelled Task</Link></div>
+        <div onClick={handleClose} className={style.menu}><Link to="/completedTask">Completed Task</Link></div>
+        {/* <div>
+        <p>  <Link to="/events"></Link></p>
+        </div> */}
         </div>
         <Button
         id="basic-button"
@@ -33,7 +37,7 @@ const Events = ({button}) => {
       >
        {button}
       </Button>
-      <Menu
+      {/* <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -48,7 +52,7 @@ const Events = ({button}) => {
         <MenuItem onClick={handleClose}>update</MenuItem>
         <MenuItem onClick={handleClose}>delete</MenuItem>
         
-      </Menu>
+      </Menu> */}
 
     </div>
 
