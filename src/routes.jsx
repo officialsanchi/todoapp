@@ -1,6 +1,7 @@
 import Layout from "./Layout"
 import Login from "./createAccount/Login.jsx"
 import Register from "./createAccount/Register.jsx"
+import Events from "./createAccount/events.jsx"
 
 
 
@@ -24,5 +25,10 @@ export const Routes = [
             
 
         // ]
+
+        {
+            path: "/events",
+            element:<Events/>,
+        }
     
 ]

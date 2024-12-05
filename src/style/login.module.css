@@ -1,23 +1,65 @@
 
 .input-container {
-    background-color: black;
+    background-color:black;
     color: white;
    
 }
 
 .container {
-    width: 400px;
-    height: 200px;
-    background-color: black;
-    margin: auto;
-    color: white;
+    width: 500px;
+    height: 550px;
+    background-color:white;
+    justify-content: center;
+    color:rgb(204, 42, 42);
+    margin-top: 30px;
+    border-radius: 30px;
+    
+    opacity: 0.9;
+
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.label{
+    align-self: self-start;
+    font-weight: 600;
 }
 .input{
     width: 300px;
     height:25px ;
-    gap: 70px;
+    border-radius: 5px;
+    border-color: rgba(204, 42, 42, 0.7);
 
 }
-.submit{
-    margin-left: 190px;
+.submit, .register{
+    margin-top: 20px;
+    background-color: rgb(204, 42, 42, 0.7);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.note{
+    color: rgb(204, 42, 42);;
+    width: 50%;
+    text-align: center;
+font-size: 90px;
+}
+.loginInput{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
 }

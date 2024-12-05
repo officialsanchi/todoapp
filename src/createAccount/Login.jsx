@@ -21,13 +21,18 @@ const Login = () => {
         
       }
     };
-  
+
     return (
-      <div className={style.container}>
-        <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="input-group">
-            <label>Email:</label>
+      <div className={style.mainContainer}>
+        <div className={style.note}>
+          <p>Sign up to orgainze your day</p>
+
+        </div>
+        <div className={style.container}>
+        <h2 style={{color:'black', fontFamily:"sans-serif", color:"rgb(204, 42, 42)"}}>Welcome to AyoChi</h2>
+        <form onSubmit={handleSubmit} className={style.form}>
+          <div className={style.loginInput}>
+            <label className={style.label}>Email:</label>
             <input
             className={style.input}
               type="email"
@@ -36,8 +41,8 @@ const Login = () => {
               required
             />
           </div>
-          <div className="input-group">
-            <label>Password:</label>
+          <div className={style.loginInput}>
+            <label className={style.label}>Password:</label>
             <input
               className={style.input}
               type="password"
@@ -51,8 +56,9 @@ const Login = () => {
         </form>
 
         <div>
-        <p> create account? <Link to="/register"><button>Register</button></Link></p>
+        <p> create account? <Link to="/register"><button className={style.register}>Register</button></Link></p>
         </div>
+      </div>
       </div>
      
     );  
